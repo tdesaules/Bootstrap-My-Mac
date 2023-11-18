@@ -1,0 +1,20 @@
+---
+
+- name: Packages - Update and upgrade all homebrew packages
+  community.general.homebrew:
+    update_homebrew: yes
+    upgrade_all: yes
+
+- name: Packages - Add homebrew repository
+  community.general.homebrew_tap:
+    name: homebrew/cask-fonts
+
+- name: Packages - Install homebrew packages
+  community.general.homebrew:
+    name: "{{ lookup('ansible.builtin.env', 'ANSIBLE_HOMEBREW_PACKAGES') | split(',') }}"
+    state: latest
+
+- name: Packages - Install homebrew cask packages
+  community.general.homebrew_cask:
+    name: "{{ lookup('ansible.builtin.env', 'ANSIBLE_HOMEBREW_CASK_PACKAGES') | split(',') }}"
+    state: latest

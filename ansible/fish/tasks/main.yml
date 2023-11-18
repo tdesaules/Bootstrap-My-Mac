@@ -1,0 +1,35 @@
+---
+
+- name: Fish - Install shell
+  community.general.homebrew:
+    name: fish
+    state: latest
+
+- name: Fish - Create a symbolic link
+  ansible.builtin.file:
+    src: /opt/homebrew/bin/fish
+    dest: /usr/local/bin/fish
+    state: link
+  become: true
+
+- name: Fish - Add fish to the shells file
+  ansible.builtin.lineinfile:
+    path: /etc/shells
+    line: /usr/local/bin/fish
+  become: true
+
+- name: Fish - Change the default shell
+  ansible.builtin.user:
+    name: "{{ lookup('ansible.builtin.env', 'USER') }}"
+    shell: /usr/local/bin/fish
+  become: true
+
+- name: Fish - Add homebrew bin to the path
+  ansible.builtin.shell: |
+    /usr/local/bin/fish -c fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
+  failed_when: false
+
+- name: Fish - Template configuration
+  ansible.builtin.template:
+    src: fish/config.fish
+    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/.config/fish/config.fish"
