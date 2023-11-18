@@ -1,0 +1,54 @@
+#!/usr/bin/env sh
+
+# MacOS 15 issue
+# sudo yabai --load-sa
+# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+yabai -m config mouse_follows_focus off
+yabai -m config focus_follows_mouse off
+yabai -m config window_zoom_persist off
+yabai -m config window_placement second_child
+yabai -m config window_topmost off
+yabai -m config window_shadow float
+yabai -m config window_opacity on
+yabai -m config window_opacity_duration 0.3
+yabai -m config active_window_opacity 1.0
+yabai -m config normal_window_opacity 1.0
+yabai -m config window_animation_duration 0.3
+yabai -m config insert_feedback_color 0xff9dd274
+yabai -m config split_ratio 0.50
+yabai -m config auto_balance off
+yabai -m config auto_padding on
+yabai -m config mouse_modifier fn
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+yabai -m config mouse_drop_action swap
+
+yabai -m config top_padding 7
+yabai -m config bottom_padding 7
+yabai -m config left_padding 7
+yabai -m config right_padding 7
+yabai -m config window_gap 7
+
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Software Update$" manage=off
+yabai -m rule --add app="^Dictionary$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^ZEDFREE$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^TIDAL$" manage=off
+yabai -m rule --add app="^RiotClient$" manage=off
+yabai -m rule --add app="^League of Legends$" manage=off
+yabai -m rule --add app="^League Of Legends$" manage=off
+yabai -m rule --add app="^REW$" manage=off
+yabai -m rule --add app="^Logi Options+$" manage=off
+
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+yabai -m config layout bsp
