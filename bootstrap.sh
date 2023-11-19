@@ -17,4 +17,4 @@ brew install python ansible
 
 # run ansible
 
-ansible-playbook ansible/bootstrap.yml --ask-become-pass
+ansible-playbook ansible/bootstrap.yml --ask-become-pass --ask-vault-pass

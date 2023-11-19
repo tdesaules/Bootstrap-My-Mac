@@ -4,5 +4,6 @@
   connection: local
   roles:
     - packages
+    - webapps
     - fish
     - hyper
