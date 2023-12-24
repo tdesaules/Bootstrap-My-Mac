@@ -28,7 +28,7 @@ brew "thefuck"
 brew "btop"
 brew "fzf"
 brew "tldr"
-brew "packer"
+brew "cirruslabs/cli/tart"
 
 # cask
 
@@ -43,7 +43,6 @@ cask "arc"
 cask "raycast"
 cask "balenaetcher"
 cask "beeper"
-cask "texts"
 cask "discord"
 cask "google-drive"
 cask "google-chrome"
@@ -62,8 +61,7 @@ cask "zoom"
 cask "affinity-designer"
 cask "affinity-photo"
 cask "affinity-publisher"
-cask "utm"
-cask "vagrant"
+cask "hashicorp/tap/hashicorp-vagrant"
 
 # mas
 
