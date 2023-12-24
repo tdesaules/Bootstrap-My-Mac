@@ -6,17 +6,9 @@ tap "homebrew/cask-fonts"
 
 # packages
 
-brew "python"
-brew "ansible"
-brew "git"
-brew "git-delta"
-brew "jq"
-brew "yq"
-brew "wget"
 brew "gh"
 brew "glab"
 brew "lf"
-brew "lazygit"
 brew "lazydocker"
 brew "m-cli"
 brew "docutils"
