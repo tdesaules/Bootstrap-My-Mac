@@ -1,0 +1,17 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+# Configure fish path
+fish_add_path /run/current-system/sw/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
+
+# Configure git
+git config --global user.name "Thibault DESAULES"
+git config --global user.email thibault@desaules.me
+git config --global init.defaultBranch main
+git config --global core.editor "code --wait"
+
+# Configure Starship
+starship init fish | source

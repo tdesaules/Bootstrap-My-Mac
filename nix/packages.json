@@ -1,9 +1,0 @@
-[
-    "nixpkgs.fish",
-    "nixpkgs.git",
-    "nixpkgs.git-extras",
-    "nixpkgs.lazygit",
-    "nixpkgs.wget",
-    "nixpkgs.jq",
-    "nixpkgs.yq"
-]

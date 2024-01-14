@@ -1,9 +1,0 @@
----
-
-- hosts: localhost
-  connection: local
-  roles:
-    - git
-    - webapps
-    - fish
-    - hyper

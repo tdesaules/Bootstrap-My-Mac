@@ -1,17 +1,19 @@
 #!/bin/bash
 
-if ! command -v nix-shell &> /dev/null
+if ! command -v nix &> /dev/null
 then
-    echo "$(date) Nix : Install Nix"
-    curl -L https://nixos.org/nix/install | sh -s -- --yes
+    echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Nix${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install nix"
+    curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm
 fi
 
-echo "$(date) Nix : Update Nix"
-sudo -i nix-channel --update
-sudo -i nix-env --install --attr nixpkgs.nix
-sudo -i launchctl remove org.nixos.nix-daemon
-sudo -i launchctl load /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Nix${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} copy flake"
+cp -R $SOURCE/nix/.config/nix-darwin $HOME/.config/
 
-echo "$(date) Nix : Install Nix mandatory packages"
-nix-env --install --attr nixpkgs.jq
-nix-env --install --attr $(jq -r '. | @tsv' $(dirname $BASH_SOURCE)/packages.json)
+if ! command -v darwin-rebuild &> /dev/null
+then
+    echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Nix${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install nix-darwin"
+    nix run nix-darwin -- switch --flake ~/.config/nix-darwin
+fi
+
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Nix${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} apply nix-darwin changes"
+darwin-rebuild switch --flake $HOME/.config/nix-darwin

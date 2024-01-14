@@ -2,10 +2,10 @@
 
 if ! test -f "/opt/homebrew/bin/brew"
 then
-    echo "$(date) --- Install Homebrew"
+    echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Brew${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install brew cli"
     export NONINTERACTIVE=1
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo "$(date) --- Install Homebrew mandatory packages"
-# brew bundle
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Brew${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install and update homebrew packages"
+brew bundle --file $SOURCE/homebrew/Brewfile
