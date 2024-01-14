@@ -1,22 +1,18 @@
 # tap configuration
 
 tap "homebrew/cask-fonts"
-tap "FelixKratz/formulae"
 tap "koekeishiya/formulae"
 
 # packages
 
 brew "yabai"
 brew "skhd"
-brew "sketchybar"
 brew "borders"
-brew "switchaudio-osx"
 
 # cask
 
 cask "font-dejavu-sans-mono-nerd-font"
 cask "font-hack-nerd-font"
-cask "sf-symbols"
 cask "hyper"
 cask "tidal"
 cask "sonos"
@@ -25,6 +21,7 @@ cask "whatsapp"
 cask "google-chrome"
 cask "google-drive"
 cask "onedrive"
+cask "dozer"
 
 # cask "brave-browser"
 # cask "arc"

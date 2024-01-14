@@ -50,8 +50,3 @@ source $SOURCE/borders/borders.sh
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source skhd script"
 source $SOURCE/skhd/skhd.sh
-
-# Sketchybar
-
-echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source sketchybar script"
-source $SOURCE/sketchybar/sketchybar.sh

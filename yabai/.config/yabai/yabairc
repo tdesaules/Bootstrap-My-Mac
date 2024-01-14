@@ -5,7 +5,6 @@ sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 
-yabai -m config external_bar all:35:0
 yabai -m config mouse_follows_focus on
 yabai -m config focus_follows_mouse off
 yabai -m config window_zoom_persist off
@@ -26,7 +25,7 @@ yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 yabai -m config mouse_drop_action swap
 
-yabai -m config top_padding 6
+yabai -m config top_padding 8
 yabai -m config bottom_padding 8
 yabai -m config left_padding 8
 yabai -m config right_padding 8

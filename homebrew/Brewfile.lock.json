@@ -77,6 +77,12 @@
         "options": {
           "full_name": "sf-symbols"
         }
+      },
+      "dozer": {
+        "version": "4.0.0",
+        "options": {
+          "full_name": "dozer"
+        }
       }
     },
     "brew": {
