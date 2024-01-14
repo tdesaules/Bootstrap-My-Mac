@@ -6,6 +6,9 @@
       },
       "felixkratz/formulae": {
         "revision": "4c29543eb45f6bb5e209e5560dbbc31a7a7276b7"
+      },
+      "koekeishiya/formulae": {
+        "revision": "ec2d2dd91fc480144413739af12d5c45637d5b76"
       }
     },
     "cask": {
@@ -79,10 +82,7 @@
     "brew": {
       "sketchybar": {
         "version": "2.19.6",
-        "bottle": false,
-        "options": {
-          "restart_service": true
-        }
+        "bottle": false
       },
       "borders": {
         "version": "1.3.3",
@@ -136,6 +136,14 @@
             }
           }
         }
+      },
+      "yabai": {
+        "version": "6.0.6",
+        "bottle": false
+      },
+      "skhd": {
+        "version": "0.3.9",
+        "bottle": false
       }
     }
   },

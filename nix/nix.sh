@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if ! command -v nix &> /dev/null
 then
@@ -7,7 +7,7 @@ then
 fi
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Nix${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} copy flake"
-cp -R $SOURCE/nix/.config/nix-darwin $HOME/.config/
+cp -rf $SOURCE/nix/.config/nix-darwin $HOME/.config/
 
 if ! command -v darwin-rebuild &> /dev/null
 then

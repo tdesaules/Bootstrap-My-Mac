@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} clean macos dock"
 dockutil --remove all --no-restart

@@ -34,7 +34,6 @@
         pkgs.tldr
         pkgs.gh
         pkgs.glab
-        pkgs.skhd
       ];
 
       # Auto upgrade nix package and the daemon service.

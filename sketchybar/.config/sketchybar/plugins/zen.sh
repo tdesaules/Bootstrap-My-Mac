@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 zen_on() {
   sketchybar --set wifi drawing=off \
@@ -11,8 +11,7 @@ zen_on() {
              --set spotify.anchor drawing=off \
              --set spotify.play updates=off \
              --set brew drawing=off \
-             --set volume drawing=off \
-             --set github.bell drawing=off
+             --set volume drawing=off
 }
 
 zen_off() {
@@ -25,8 +24,7 @@ zen_off() {
              --set volume_icon drawing=on \
              --set spotify.play updates=on \
              --set brew drawing=on \
-             --set volume drawing=on \
-             --set github.bell drawing=on
+             --set volume drawing=on
 }
 
 if [ "$1" = "on" ]; then

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 volume_slider=(
   script="$PLUGIN_DIR/volume.sh"
@@ -39,5 +39,5 @@ sketchybar --add slider volume right            \
            --add item volume_icon right         \
            --set volume_icon "${volume_icon[@]}"
 
-sketchybar --add bracket status brew github.bell wifi volume_icon \
+sketchybar --add bracket status brew wifi volume_icon \
            --set status "${status_bracket[@]}"

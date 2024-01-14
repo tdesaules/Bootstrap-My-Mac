@@ -2,10 +2,13 @@
 
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
+tap "koekeishiya/formulae"
 
 # packages
 
-brew "sketchybar", restart_service: true
+brew "yabai"
+brew "skhd"
+brew "sketchybar"
 brew "borders"
 brew "switchaudio-osx"
 
@@ -23,7 +26,6 @@ cask "google-chrome"
 cask "google-drive"
 cask "onedrive"
 
-# cask "dozer"
 # cask "brave-browser"
 # cask "arc"
 # cask "raycast"

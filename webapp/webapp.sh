@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Webapp${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} check and install webapp"
 
