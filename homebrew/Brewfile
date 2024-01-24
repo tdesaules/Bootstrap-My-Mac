@@ -8,6 +8,7 @@ tap "koekeishiya/formulae"
 brew "yabai"
 brew "skhd"
 brew "borders"
+brew "jp2a"
 
 # cask
 
@@ -22,6 +23,7 @@ cask "google-chrome"
 cask "google-drive"
 cask "onedrive"
 cask "dozer"
+cask "adobe-acrobat-reader"
 
 # cask "brave-browser"
 # cask "arc"

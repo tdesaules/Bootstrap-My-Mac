@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "cb5a031b8b969be9685c5e5106dc52e9484172c9"
+        "revision": "96121ef07559f3018e61144a69695841948e0a36"
       },
       "felixkratz/formulae": {
         "revision": "4c29543eb45f6bb5e209e5560dbbc31a7a7276b7"
@@ -25,7 +25,7 @@
         }
       },
       "tidal": {
-        "version": "2.35.0",
+        "version": "2.36.2",
         "options": {
           "full_name": "tidal"
         }
@@ -43,19 +43,19 @@
         }
       },
       "whatsapp": {
-        "version": "2.23.25.86",
+        "version": "2.24.1.81",
         "options": {
           "full_name": "whatsapp"
         }
       },
       "google-chrome": {
-        "version": "120.0.6099.216",
+        "version": "121.0.6167.85",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "google-drive": {
-        "version": "85.0.35",
+        "version": "85.0.37",
         "options": {
           "full_name": "google-drive"
         }
@@ -82,6 +82,12 @@
         "version": "4.0.0",
         "options": {
           "full_name": "dozer"
+        }
+      },
+      "adobe-acrobat-reader": {
+        "version": "23.008.20470",
+        "options": {
+          "full_name": "adobe-acrobat-reader"
         }
       }
     },
@@ -150,13 +156,57 @@
       "skhd": {
         "version": "0.3.9",
         "bottle": false
+      },
+      "jp2a": {
+        "version": "1.2.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:874626298e9ec3382fec6b0959bfd2c03de419640ada27d70547012c0fee1b9b",
+              "sha256": "874626298e9ec3382fec6b0959bfd2c03de419640ada27d70547012c0fee1b9b"
+            },
+            "arm64_ventura": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:cd1ddc8d78c2b8391a7fd5b69ac9357a7105a223029ca3d4a691f5a6e57f57ca",
+              "sha256": "cd1ddc8d78c2b8391a7fd5b69ac9357a7105a223029ca3d4a691f5a6e57f57ca"
+            },
+            "arm64_monterey": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:7e104bb6a94326ac330df1daeed8424a92e9ca66d02a681c892bac0ccb20df9f",
+              "sha256": "7e104bb6a94326ac330df1daeed8424a92e9ca66d02a681c892bac0ccb20df9f"
+            },
+            "sonoma": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:06689dada11615dce0fc563c73dd91b4ff8a2c8f0b08936381392a29de81fe88",
+              "sha256": "06689dada11615dce0fc563c73dd91b4ff8a2c8f0b08936381392a29de81fe88"
+            },
+            "ventura": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:ec87f44c1fa6669a6ab3f0d7ac08c4746e6966416b3ae2ad2d88a9545622fe70",
+              "sha256": "ec87f44c1fa6669a6ab3f0d7ac08c4746e6966416b3ae2ad2d88a9545622fe70"
+            },
+            "monterey": {
+              "cellar": ":any",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:e97f337a7a7120c1a7f352e810f3e307be24a46cfdfdd957a21998fbc34d2e83",
+              "sha256": "e97f337a7a7120c1a7f352e810f3e307be24a46cfdfdd957a21998fbc34d2e83"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/jp2a/blobs/sha256:626b7dd604f1a12c799d2e3b73241fd874adbb5032ce853519de4fce554c4d83",
+              "sha256": "626b7dd604f1a12c799d2e3b73241fd874adbb5032ce853519de4fce554c4d83"
+            }
+          }
+        }
       }
     }
   },
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.3",
+        "HOMEBREW_VERSION": "4.2.5",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
