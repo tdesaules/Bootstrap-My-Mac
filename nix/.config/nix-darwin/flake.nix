@@ -35,7 +35,6 @@
         pkgs.gh
         pkgs.glab
         pkgs.neofetch
-        pkgs.ollama
       ];
 
       # Auto upgrade nix package and the daemon service.

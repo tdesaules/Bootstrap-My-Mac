@@ -8,7 +8,8 @@ tap "koekeishiya/formulae"
 brew "yabai"
 brew "skhd"
 brew "borders"
-brew "jp2a"
+brew "lima"
+brew "colima"
 
 # cask
 

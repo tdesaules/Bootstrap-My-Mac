@@ -12,4 +12,4 @@ then
 fi
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Fish${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} change default shell"
-chsh -s /run/current-system/sw/bin/fish
+sudo chsh -s /run/current-system/sw/bin/fish $USER

@@ -15,3 +15,6 @@ git config --global core.editor "code --wait"
 
 # Configure Starship
 starship init fish | source
+
+# Print Neofetch
+neofetch

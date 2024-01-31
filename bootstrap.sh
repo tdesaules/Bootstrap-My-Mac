@@ -41,7 +41,7 @@ source $SOURCE/dock/dock.sh
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source yabai script"
 source $SOURCE/yabai/yabai.sh
 
-# Boerders
+# Borders
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source borders script"
 source $SOURCE/borders/borders.sh
