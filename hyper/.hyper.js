@@ -8,7 +8,7 @@ module.exports = {
         // or `'canary'` for less polished but more frequent updates
         updateChannel: 'stable',
         // default font size in pixels for all tabs
-        fontSize: 13,
+        fontSize: 12,
         // font family with optional fallbacks
         fontFamily: '"DejaVuSansM Nerd Font", "Fira Code", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
         // default font weight: 'normal' or 'bold'
@@ -53,8 +53,8 @@ module.exports = {
         padding: '12px 14px',
         // configure opacity
         opacity: {
-            focus: 0.85,
-            blur: 0.75
+            focus: 1.0,
+            blur: 0.85
         },
         activeTab: "🚀",
         // the full list. if you're going to provide the full color palette,

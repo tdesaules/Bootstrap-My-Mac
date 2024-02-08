@@ -9,6 +9,8 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs }:
   let
+    hostname = "Thibaults-MacBook-Pro";
+    platform = "aarch64-darwin";
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
@@ -35,6 +37,9 @@
         pkgs.gh
         pkgs.glab
         pkgs.neofetch
+        pkgs.docker-client
+        pkgs.bat
+        pkgs.toybox
       ];
 
       # Auto upgrade nix package and the daemon service.
@@ -56,17 +61,16 @@
       system.stateVersion = 4;
 
       # The platform the configuration will be used on.
-      nixpkgs.hostPlatform = "aarch64-darwin";
+      nixpkgs.hostPlatform = "${platform}";
     };
   in
   {
     # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#Thibaults-MacBook-Pro
-    darwinConfigurations."Thibaults-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."${hostname}" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."Thibaults-MacBook-Pro".pkgs;
+    darwinPackages = self.darwinConfigurations."${hostname}".pkgs;
   };
 }

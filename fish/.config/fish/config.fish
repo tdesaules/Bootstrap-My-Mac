@@ -7,11 +7,17 @@ fish_add_path /run/current-system/sw/bin
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 
+# Configure aliases
+alias lzg="lazygit"
+
 # Configure git
 git config --global user.name "Thibault DESAULES"
 git config --global user.email thibault@desaules.me
 git config --global init.defaultBranch main
 git config --global core.editor "code --wait"
+
+# Define environement variable
+set NIXPKGS_ALLOW_UNFREE 1
 
 # Configure Starship
 starship init fish | source

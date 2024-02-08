@@ -36,6 +36,16 @@ source $SOURCE/webapp/webapp.sh
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source dock script"
 source $SOURCE/dock/dock.sh
 
+# Wallpaper
+
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source wallpaper script"
+source $SOURCE/wallpaper/wallpaper.sh
+
+# Finder
+
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source finder script"
+source $SOURCE/finder/finder.sh
+
 # Yabai
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source yabai script"
