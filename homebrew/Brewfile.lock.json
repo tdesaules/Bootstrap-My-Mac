@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "289205374586d0476d3dee30cd87298fa368b864"
+        "revision": "5ead3d7e4754b25821eb2aeabdb9ca67b97c2862"
       },
       "felixkratz/formulae": {
         "revision": "4c29543eb45f6bb5e209e5560dbbc31a7a7276b7"
       },
       "koekeishiya/formulae": {
-        "revision": "8369e933eea217a1d83feed00e1bf2614085c255"
+        "revision": "b5a09678f24b05184d62cf5a4838187e39ccc93c"
       }
     },
     "cask": {
@@ -31,7 +31,7 @@
         }
       },
       "sonos": {
-        "version": "15.11,76.2.47270",
+        "version": "16.0,77.4.49290",
         "options": {
           "full_name": "sonos"
         }
@@ -43,25 +43,25 @@
         }
       },
       "whatsapp": {
-        "version": "2.24.2.76",
+        "version": "2.24.3.79",
         "options": {
           "full_name": "whatsapp"
         }
       },
       "google-chrome": {
-        "version": "121.0.6167.160",
+        "version": "122.0.6261.69",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "google-drive": {
-        "version": "86.0.2",
+        "version": "87.0.2",
         "options": {
           "full_name": "google-drive"
         }
       },
       "onedrive": {
-        "version": "24.010.0114.0003",
+        "version": "24.020.0128.0003",
         "options": {
           "full_name": "onedrive"
         }
@@ -85,31 +85,31 @@
         }
       },
       "adobe-acrobat-reader": {
-        "version": "23.008.20470",
+        "version": "23.008.20533",
         "options": {
           "full_name": "adobe-acrobat-reader"
         }
       },
       "logi-options-plus": {
-        "version": "1.62.518518",
+        "version": "1.64.527952",
         "options": {
           "full_name": "logi-options-plus"
         }
       },
       "brave-browser": {
-        "version": "1.62.162.0",
+        "version": "1.63.162.0",
         "options": {
           "full_name": "brave-browser"
         }
       },
       "arc": {
-        "version": "1.28.0,45831",
+        "version": "1.31.0,46662",
         "options": {
           "full_name": "arc"
         }
       },
       "raycast": {
-        "version": "1.67.1",
+        "version": "1.68.1",
         "options": {
           "full_name": "raycast"
         }
@@ -121,13 +121,13 @@
         }
       },
       "discord": {
-        "version": "0.0.293",
+        "version": "0.0.295",
         "options": {
           "full_name": "discord"
         }
       },
       "nordvpn": {
-        "version": "8.15.1",
+        "version": "8.16.1",
         "options": {
           "full_name": "nordvpn"
         }
@@ -151,7 +151,7 @@
         }
       },
       "sleek": {
-        "version": "2.0.8",
+        "version": "2.0.9",
         "options": {
           "full_name": "sleek"
         }
@@ -205,13 +205,13 @@
         }
       },
       "bruno": {
-        "version": "1.8.0",
+        "version": "1.9.0",
         "options": {
           "full_name": "bruno"
         }
       },
       "proxyman": {
-        "version": "4.16.0,49700",
+        "version": "5.0.0,50000",
         "options": {
           "full_name": "proxyman"
         }
@@ -235,9 +235,21 @@
         }
       },
       "remote-desktop-manager": {
-        "version": "2023.3.12.3",
+        "version": "2023.3.13.4",
         "options": {
           "full_name": "remote-desktop-manager"
+        }
+      },
+      "steam": {
+        "version": "4.0",
+        "options": {
+          "full_name": "steam"
+        }
+      },
+      "league-of-legends": {
+        "version": "1.0",
+        "options": {
+          "full_name": "league-of-legends"
         }
       }
     },
@@ -247,7 +259,7 @@
         "bottle": false
       },
       "borders": {
-        "version": "1.4.2",
+        "version": "1.5.1",
         "bottle": false
       },
       "switchaudio-osx": {
@@ -300,7 +312,7 @@
         }
       },
       "yabai": {
-        "version": "6.0.9",
+        "version": "6.0.15",
         "bottle": false
       },
       "skhd": {
@@ -450,12 +462,12 @@
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.7",
+        "HOMEBREW_VERSION": "4.2.9",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
         "Xcode": "15.1",
-        "macOS": "14.3"
+        "macOS": "14.3.1"
       }
     }
   }

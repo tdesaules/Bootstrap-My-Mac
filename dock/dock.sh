@@ -18,8 +18,14 @@ dockutil --add '/Applications/Notes.app' --no-restart
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} add safari"
 dockutil --add '/Applications/Safari.app' --no-restart
 
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} add google chrome"
+dockutil --add '/Applications/Google Chrome.app' --no-restart
+
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} add vscode"
 dockutil --add '/Applications/Visual Studio Code.app' --no-restart
+
+echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} add hyper"
+dockutil --add '/Applications/Hyper.app' --no-restart
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Dock${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} configure auto hide feature"
 m dock autohide YES

@@ -42,6 +42,11 @@ yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^ZEDFREE$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Steam$" manage=off
+yabai -m rule --add app="^Dota 2$" manage=off
+yabai -m rule --add app="^RiotClient$" manage=off
+yabai -m rule --add app="^League of Legends$" manage=off
+yabai -m rule --add app="^League Of Legends$" manage=off
 
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
