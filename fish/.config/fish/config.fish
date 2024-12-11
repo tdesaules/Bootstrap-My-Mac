@@ -18,6 +18,7 @@ git config --global core.editor "code --wait"
 
 # Define environement variable
 set NIXPKGS_ALLOW_UNFREE 1
+set OLLAMA_HOST 0.0.0.0:11434
 
 # Configure Starship
 starship init fish | source
@@ -32,4 +33,4 @@ alias hi="echo 'hello dude'"
 alias clr="clear"
 
 # Print Neofetch
-neofetch
+fastfetch

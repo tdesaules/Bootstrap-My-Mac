@@ -54,7 +54,7 @@ module.exports = {
         // configure opacity
         opacity: {
             focus: 1.0,
-            blur: 0.85
+            blur: 1
         },
         activeTab: "🚀",
         // the full list. if you're going to provide the full color palette,
@@ -98,7 +98,7 @@ module.exports = {
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
-        shell: '/run/current-system/sw/bin/fish',
+        shell: '/opt/homebrew/bin/fish',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         shellArgs: ['--login'],

@@ -18,11 +18,6 @@ echo "$(whoami) ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$(whoami)
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source launchd script"
 source $SOURCE/launchd/launchd.sh
 
-# Nix
-
-echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source nix script"
-source $SOURCE/nix/nix.sh
-
 # Homebrew
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source homebrew script"
@@ -47,11 +42,6 @@ source $SOURCE/webapp/webapp.sh
 
 echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source dock script"
 source $SOURCE/dock/dock.sh
-
-# Wallpaper
-
-echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Bootstrap${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source wallpaper script"
-source $SOURCE/wallpaper/wallpaper.sh
 
 # Finder
 
