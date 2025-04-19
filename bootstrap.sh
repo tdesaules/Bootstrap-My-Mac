@@ -65,5 +65,5 @@ source $SOURCE/skhd/skhd.sh
 
 # Lima
 
-echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Lima${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source lima script"
-source $SOURCE/lima/lima.sh
+# echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Lima${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} source lima script"
+# source $SOURCE/lima/lima.sh

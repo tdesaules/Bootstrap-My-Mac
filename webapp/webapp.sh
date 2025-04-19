@@ -31,9 +31,3 @@ then
     echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Webapp${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install myCANAL"
     tar xzf $SOURCE/webapp/mycanal.tar.gz --directory $HOME/Applications
 fi
-
-if [ ! -d "$HOME/Applications/Medium.app" ]
-then
-    echo -e "[ ${BLUE}$(date)${RESET_COLOR} ] ( ${GREEN}Webapp${RESET_COLOR} ) ${B_PURPLE}-${RESET_COLOR} install Medium"
-    tar xzf $SOURCE/webapp/medium.tar.gz --directory $HOME/Applications
-fi
